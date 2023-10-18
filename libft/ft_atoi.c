@@ -14,7 +14,7 @@ int	ft_atoi(char *str)
 	int	parity;
 	int	i;
 	int	nb;
-fdsfdsfsd
+
 	parity = 1;
 	i = 0;
 	nb = 0;
