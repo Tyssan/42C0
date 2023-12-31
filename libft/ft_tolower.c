@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 15:39:10 by tbrunier          #+#    #+#             */
-/*   Updated: 2023/10/04 15:39:10 by tbrunier         ###   ########.fr       */
+/*   Created: 2023/12/28 00:11:42 by tbrunier          #+#    #+#             */
+/*   Updated: 2023/12/28 00:11:42 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_tolower(int c)
 {
-	size_t	strnb;
-
-	strnb = 0;
-	while (s[strnb] != '\0')
-	{
-		strnb++;
-	}
-	return (strnb);
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	return (c);
 }

@@ -9,7 +9,9 @@
 /*   Updated: 2023/10/06 20:16:52 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_atoi(char *str)
+#include "libft.h"
+
+int	ft_atoi(const char *nptr)
 {
 	int	parity;
 	int	i;
@@ -18,16 +20,17 @@ int	ft_atoi(char *str)
 	parity = 1;
 	i = 0;
 	nb = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || (str[i] == 32))
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || (nptr[i] == 32))
 		i++;
-	if (str[i] == '-')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		parity = -1;
+		if (nptr[i] == '-')
+			parity = -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		nb = nb * 10 + str[i] - 48;
+		nb = nb * 10 + nptr[i] - 48;
 		i++;
 	}
 	return (nb * parity);
