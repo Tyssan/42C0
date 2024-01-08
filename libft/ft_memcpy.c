@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 00:32:15 by tbrunier          #+#    #+#             */
-/*   Updated: 2024/01/04 00:32:15 by tbrunier         ###   ########.fr       */
+/*   Updated: 2024/01/08 13:54:15 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

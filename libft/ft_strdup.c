@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 09:54:16 by tbrunier          #+#    #+#             */
-/*   Updated: 2024/01/05 09:54:16 by tbrunier         ###   ########.fr       */
+/*   Updated: 2024/01/08 13:54:26 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strdup(const char *s)

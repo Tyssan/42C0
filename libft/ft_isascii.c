@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:31:40 by tbrunier          #+#    #+#             */
 /*   Updated: 2023/10/18 18:31:40 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isascii(int c)

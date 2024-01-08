@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:23:56 by tbrunier          #+#    #+#             */
 /*   Updated: 2023/10/18 17:23:56 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isalpha(int c)

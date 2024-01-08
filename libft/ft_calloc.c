@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 10:29:38 by tbrunier          #+#    #+#             */
-/*   Updated: 2024/01/05 10:29:38 by tbrunier         ###   ########.fr       */
+/*   Updated: 2024/01/08 13:56:41 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)

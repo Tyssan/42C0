@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 16:24:36 by tbrunier          #+#    #+#             */
-/*   Updated: 2024/01/03 16:24:36 by tbrunier         ###   ########.fr       */
+/*   Updated: 2024/01/08 13:52:31 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

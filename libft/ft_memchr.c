@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 19:50:36 by tbrunier          #+#    #+#             */
-/*   Updated: 2024/01/04 19:50:36 by tbrunier         ###   ########.fr       */
+/*   Updated: 2024/01/08 13:54:06 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

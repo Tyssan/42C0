@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 01:11:27 by tbrunier          #+#    #+#             */
-/*   Updated: 2024/01/04 01:11:27 by tbrunier         ###   ########.fr       */
+/*   Updated: 2024/01/08 13:52:23 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
