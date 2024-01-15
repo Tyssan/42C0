@@ -10,20 +10,108 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-int	count_words(char const *s)
+void	*ft_memcpysplit(void *dest, const void *src, size_t n)
 {
-	int	n;
+	int					i;
+	unsigned char		*dest_p;
+	const unsigned char	*src_p;
 
+	i = -1;
+	dest_p = dest;
+	src_p = src;
+	while (++i < (int)n)
+		dest_p[i] = src_p[i];
+	dest_p[i] = '\0';
+	return (dest);
+}
+
+size_t	ft_strlen_sep(const char *s, char c)
+{
+	size_t	i;
+
+	if (!s)
+		return (0);
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	return (i);
+}
+
+size_t	ft_count_words(char const *s, char c)
+{
+	size_t	n;
+	size_t	i;
+
+	if (!s)
+		return (0);
 	n = 0;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
+			n++;
+		i++;
+	}
 	return (n);
+}
+
+void	ft_freesplit(char **tab, size_t tabnb)
+{
+	while (tabnb != 0)
+		free (tab[--tabnb]);
+	free (tab);
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;
+	size_t	wordnb;
+	size_t	str_len;
+	size_t	i;
 
-	tab = NULL;
+	i = 0;
+	wordnb = ft_count_words(s, c);
+	if (!s)
+		return (NULL);
+	tab = malloc(sizeof(char *) * (wordnb + 1));
+	if (!tab)
+		return (NULL);
+	while (*s && wordnb != 0)
+	{
+		while (*s == c && *s)
+			s++;
+		if (!(*s))
+		{
+			tab[wordnb] = NULL;
+			return (tab);
+		}
+		str_len = ft_strlen_sep(s, c);
+		tab[i] = malloc(sizeof(char) * (str_len + 1));
+		if (!tab[i])
+			return (ft_freesplit(tab, i), NULL);
+		ft_memcpysplit(tab[i], s, str_len);
+		s = s + str_len;
+		i++;
+	}
+	tab[wordnb] = NULL;
 	return (tab);
 }
+
+/*int	main(void)
+{
+	char	**res = ft_split("    test2 test3 test4    ", ' ');
+	int		i = 0;
+
+	if (res == NULL)
+	{
+		printf("null\n");
+		return (0);
+	}
+	while (res[i] != NULL)
+		printf("%s\n", res[i++]);
+	return (0);
+}
+*/
