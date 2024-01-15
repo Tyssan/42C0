@@ -18,8 +18,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 
 	totalsize = nmemb * size;
-	if (totalsize < nmemb && totalsize < size)
-		return (NULL);
 	ptr = malloc(totalsize);
 	if (ptr != NULL)
 		ft_bzero(ptr, totalsize);

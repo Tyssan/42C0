@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbrunier <tbrunier@student.42perpignan.fr> +#+  +:+       +#+        */
+/*   By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 19:33:01 by tbrunier          #+#    #+#             */
-/*   Updated: 2024/01/11 20:17:39 by tbrunier         ###   ########.fr       */
+/*   Updated: 2024/01/15 08:34:55 by tbrunier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
