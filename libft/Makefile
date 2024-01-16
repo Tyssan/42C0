@@ -4,7 +4,7 @@ CC = clang
 CFLAGS = -Wall -Wextra -Werror
 INC_PATH = .
 SRC_PATH = .
-OBJ_PATH = obj
+OBJ_PATH = .
 
 SRC_FILES = ft_atoi.c ft_bzero.c ft_calloc.c\
 ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c\
@@ -36,11 +36,8 @@ bonus: $(BONUS_OBJS)
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c | $(OBJ_PATH)
 	$(CC) $(CFLAGS) -I$(INC_PATH) -o $@ -c $<
 
-$(OBJ_PATH):
-	mkdir -p $(OBJ_PATH)
-
 clean:
-	rm -rf $(OBJ_PATH)
+	rm -rf $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
