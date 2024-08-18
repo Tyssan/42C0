@@ -1,3 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tbrunier <tbrunier@student.42perpignan.    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/07/03 13:10:24 by tbrunier          #+#    #+#              #
+#    Updated: 2024/07/03 13:10:24 by tbrunier         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+################################################################################
+## VARIABLES
+
 NAME = libft.a
 
 CC = clang
@@ -5,6 +20,9 @@ CFLAGS = -Wall -Wextra -Werror
 INC_PATH = .
 SRC_PATH = .
 OBJ_PATH = .
+
+################################################################################
+## SOURCES
 
 SRC_FILES = ft_atoi.c ft_bzero.c ft_calloc.c\
 ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c\
@@ -23,7 +41,8 @@ OBJS = $(addprefix $(OBJ_PATH)/, $(SRC_FILES:.c=.o))
 BONUS_SRCS = $(addprefix $(SRC_PATH)/, $(BONUS_FILES))
 BONUS_OBJS = $(addprefix $(OBJ_PATH)/, $(BONUS_FILES:.c=.o))
 
-.PHONY: all clean fclean re bonus
+################################################################################
+## RULES
 
 all: $(NAME)
 
@@ -43,3 +62,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re bonus
