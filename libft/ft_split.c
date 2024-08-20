@@ -77,7 +77,7 @@ int	ft_splitloop(char const **s, char c, char ***tab, size_t wordnb)
 		if (!(*tab)[i])
 		{
 			while (i != 0)
-				free ((*tab)[--i]);
+				free((*tab)[--i]);
 			return (free(*tab), 0);
 		}
 		ft_memcpysplit((*tab)[i++], *s, str_len);
