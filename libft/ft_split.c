@@ -98,7 +98,10 @@ char	**ft_split(char const *s, char c)
 	if (!tab)
 		return (NULL);
 	if (!ft_splitloop(&s, c, &tab, wordnb))
+	{
+		free(tab);
 		return (NULL);
+	}
 	tab[wordnb] = NULL;
 	return (tab);
 }
